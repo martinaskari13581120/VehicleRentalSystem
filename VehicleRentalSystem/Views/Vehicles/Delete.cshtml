@@ -1,0 +1,12 @@
+﻿@model VehicleRentalSystem.Models.Vehicle
+
+<h2>Delete Vehicle</h2>
+
+<p>Are you sure?</p>
+
+<p>@Model.Brand - @Model.Model</p>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Delete</button>
+</form>

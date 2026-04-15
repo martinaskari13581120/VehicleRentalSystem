@@ -1,0 +1,26 @@
+﻿@model IEnumerable<VehicleRentalSystem.Models.Reservation>
+
+<h2>Reservations</h2>
+
+<a href="/Reservations/Create">New Reservation</a>
+
+<table border="1">
+    <tr>
+        <th>Vehicle</th>
+        <th>Customer</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Total</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Vehicle.Model</td>
+            <td>@item.Customer.FullName</td>
+            <td>@item.StartDate</td>
+            <td>@item.EndDate</td>
+            <td>$@item.TotalPrice</td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,18 @@
+﻿@model VehicleRentalSystem.Models.Vehicle
+
+<h2>Edit Vehicle</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+
+    <label>Brand:</label>
+    <input asp-for="Brand" /><br />
+
+    <label>Model:</label>
+    <input asp-for="Model" /><br />
+
+    <label>Price:</label>
+    <input asp-for="PricePerDay" /><br />
+
+    <button type="submit">Save</button>
+</form>

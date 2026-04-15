@@ -1,0 +1,16 @@
+﻿@model VehicleRentalSystem.Models.Customer
+
+<h2>Add Customer</h2>
+
+<form asp-action="Create">
+    <label>FullName:</label>
+    <input asp-for="FullName" /><br />
+
+    <label>Phone:</label>
+    <input asp-for="Phone" /><br />
+
+    <label>Email:</label>
+    <input asp-for="Email" /><br />
+
+    <button type="submit">Save</button>
+</form>

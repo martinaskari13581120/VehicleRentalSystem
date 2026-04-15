@@ -1,0 +1,10 @@
+﻿@model IEnumerable<VehicleRentalSystem.Models.Customer>
+
+<h2>Customers</h2>
+
+<a href="/Customers/Create">Add Customer</a>
+
+@foreach (var item in Model)
+{
+    <p>@item.FullName</p>
+}
